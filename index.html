@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script>
+            var userAge = prompt("Ålder:"), film, gender = prompt("Kön:");
+            
+            if (gender == "man" || gender == "Man") {
+            if(userAge < 7){
+            film = "Pettsson och Findus";
+            } else if (userAge < 14){
+                film = "Frost";
+            } else if (userAge < 18){
+                film = "Project X"
+            } else if (userAge < 40){
+                film = "Kärleksfilm"
+            } else {
+                film = "Nalleh Puh"
+            }
+            } else if (gender == "kvinna" || gender == "Kvinna") {
+                
+            if(userAge < 7){
+            film = "Gläntan";
+            } else if (userAge < 14){
+                film = "trollolt";
+            } else if (userAge < 18){
+                film = "Project asdasdX"
+            } else if (userAge < 40){
+                film = "Kärlekasdasdsfilm"
+            } else {
+                film = "Nalasdasdleh Puh"
+            }
+            }
+            
+            alert("Rekommenderad film: " + film);
+            
+        </script>
+        
+        
+    </head>
+
+    <body>
+        
+        
+        
+    </body>
+
+</html>
