@@ -1,10 +1,12 @@
 function logg() {
-            var väder, grader, kläder
+            let väder = '';
+            let grader = null;
+            let kläder = '';
             
-            väder = prompt("Vad är det för väder? Regnigt/soligt");
+            väder = prompt("Vad är det för väder? Regnigt/soligt").toLowerCase();
             grader = prompt("Hur många grader är det?");
             
-            if (väder == "Regnigt" || väder == "regnigt") {
+            if (väder === "regnigt") {
                 if (grader < 10) {
                     kläder = "Ta på dig en regnjacka!";
                 } else if (grader < 15) {
@@ -16,7 +18,7 @@ function logg() {
                 } else {
                     kläder = "Äre 0 grader?"
                 }
-            } else if (väder == "Soligt" || väder == "soligt") {
+            } else if (väder === "soligt") {
                 if (grader < 5) {
                     kläder = "DET ÄR JU SVIN KALLT! TA PÅ DIG ALLT DU ÄGER!!!";
                 } else if (grader < 10) {
@@ -35,6 +37,8 @@ function logg() {
             }
             alert(kläder);
 }
+
+logg();
 function funktion() {
 
             var userName = "Vezel";
